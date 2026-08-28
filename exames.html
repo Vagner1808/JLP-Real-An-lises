@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consulte os exames da JLP Real Análises Clínicas.">
+  <title>Exames | JLP Real Análises Clínicas</title>
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container barra">
+      <a class="marca" href="index.html"><span class="marca-icone">JLP</span><span><strong>JLP</strong><small>Real Análises Clínicas</small></span></a>
+      <button class="menu-botao" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="menu"><a href="index.html">Início</a><a href="index.html#convenios">Convênios</a><a class="ativo" href="exames.html">Exames</a><a href="index.html#dr-marcial">Dr. Marcial</a><a href="index.html#contato">Contato</a></nav>
+      <a class="botao botao-cabecalho" href="https://wa.me/5546999178212?text=Olá%2C%20gostaria%20de%20consultar%20os%20exames%20disponíveis." target="_blank" rel="noopener">Consultar exames</a>
+    </div>
+  </header>
+
+  <main class="pagina-exames">
+    <section class="exames-topo">
+      <div class="container">
+        <a class="voltar" href="index.html">← Voltar ao início</a>
+        <p class="rotulo">Catálogo JLP</p>
+        <h1>Exames <em>disponíveis</em></h1>
+        <p>Encontre o exame que você precisa e fale diretamente com a equipe para confirmar disponibilidade, preparo e prazo.</p>
+      </div>
+    </section>
+
+    <section class="secao orientacao-exames">
+      <div class="container">
+        <div class="orientacao-titulo"><div><p class="rotulo escuro">Informação antes da coleta</p><h2>O exame é uma parte do cuidado.</h2></div><p>Escolha, preparo e interpretação precisam conversar com o seu contexto de saúde.</p></div>
+        <div class="orientacao-grade"><article><span>⌕</span><h3>Indicação adequada</h3><p>Converse com o profissional que acompanha você sobre quais exames fazem sentido e quando realizá-los.</p></article><article><span>✓</span><h3>Preparo confirmado</h3><p>Jejum e outros cuidados variam. Confirme diretamente com o laboratório para evitar dúvidas.</p></article><article><span>▣</span><h3>Interpretação responsável</h3><p>Leve o resultado ao profissional solicitante. Valores de referência não substituem avaliação clínica.</p></article></div>
+      </div>
+    </section>
+
+    <section class="secao catalogo">
+      <div class="container">
+        <div class="aviso"><strong>Atendimento direto pelo WhatsApp</strong><span>Clique em qualquer exame para consultar disponibilidade, orientações de preparo e prazo.</span></div>
+        <div class="ferramentas">
+          <label><span>Buscar exame</span><input id="busca" type="search" placeholder="Digite o nome do exame..."></label>
+          <div><span class="filtro-titulo">Filtrar por categoria</span><div id="categorias" class="categorias"></div></div>
+        </div>
+        <div class="resumo"><span id="quantidade"></span><span>Preparo e prazo podem variar conforme o exame.</span></div>
+        <div id="lista-exames" class="exames-grade"></div>
+        <div id="sem-resultado" class="sem-resultado" hidden><h2>Nenhum exame encontrado</h2><p>Tente outro nome ou consulte diretamente a equipe.</p><button id="limpar" type="button">Limpar busca</button></div>
+      </div>
+    </section>
+
+    <section class="faixa-contato">
+      <div class="container"><div><span>Não encontrou o exame?</span><strong>Fale com a equipe. O JLP realiza uma ampla variedade de análises.</strong></div><a class="botao botao-principal" href="https://wa.me/5546999178212?text=Olá%2C%20não%20encontrei%20o%20exame%20que%20preciso%20no%20site." target="_blank" rel="noopener">Consultar pelo WhatsApp</a></div>
+    </section>
+  </main>
+
+  <footer class="rodape"><div class="container rodape-conteudo"><div><strong>JLP Real Análises Clínicas</strong><small>Rua Itália, 3069 • Realeza–PR • Informação geral não substitui orientação profissional.</small></div><div><a href="tel:+5546999178212">(46) 99917-8212</a></div></div></footer>
+  <a class="whatsapp-flutuante" href="https://wa.me/5546999178212" target="_blank" rel="noopener">WhatsApp</a>
+  <script src="script.js"></script>
+</body>
+</html>
